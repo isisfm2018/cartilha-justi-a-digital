@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartilha Digital Interativa | Justiça Digital</title>
+<meta name="description" content="Cartilha educativa de acesso à Justiça Digital e resolução de conflitos de consumo.">
+<style>
+:root{--navy:#123b66;--blue:#1769aa;--teal:#0b8f91;--mint:#eaf8f6;--ink:#203040;--muted:#5f6f7d;--line:#dbe5ec;--bg:#f7fafc;--white:#fff;--warn:#fff4cf;--danger:#a93f3f;--good:#23734a;--fs:18px}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:var(--fs);line-height:1.6;color:var(--ink);background:var(--bg)}
+a{color:#075d9a}.skip{position:absolute;left:-9999px;top:0}.skip:focus{left:1rem;top:1rem;background:#fff;padding:.8rem;z-index:999;border:3px solid #000}
+.wrap{width:min(1100px,92%);margin:auto}
+.top{background:var(--navy);color:#fff;padding:.65rem 0;font-size:.85rem}.top .wrap{display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap}
+.a11y{display:flex;gap:.45rem;flex-wrap:wrap}.a11y button{background:#fff;color:var(--navy);border:0;border-radius:999px;padding:.45rem .75rem;font-weight:800;cursor:pointer}
+.hero{background:linear-gradient(135deg,#123b66,#0b8f91);color:#fff;padding:4rem 0 3.4rem}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center}
+.kicker{font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#c8fffa;font-size:.82rem}
+h1{font-size:clamp(2.1rem,5vw,4.2rem);line-height:1.02;margin:.5rem 0 1rem} h2{font-size:clamp(1.6rem,3vw,2.35rem);line-height:1.15;color:var(--navy);margin:.2rem 0 .7rem}
+.hero p{max-width:700px;font-size:1.1rem}.hero-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;text-decoration:none;border:0;border-radius:12px;padding:.85rem 1.1rem;font-weight:850;cursor:pointer;background:var(--teal);color:#fff;min-height:48px}
+.btn.light{background:#fff;color:var(--navy)} .btn.outline{background:transparent;border:2px solid #fff;color:#fff}
+.phone{width:min(320px,100%);margin:auto;background:#fff;color:var(--ink);border:8px solid #102d4a;border-radius:34px;padding:1.2rem;box-shadow:0 20px 45px #06233b55}
+.phone .notch{height:8px;width:35%;background:#102d4a;border-radius:8px;margin:-.55rem auto 1rem}
+.mini{background:var(--mint);border-radius:14px;padding:.75rem;margin:.55rem 0;font-weight:750;color:var(--navy);display:flex;gap:.65rem;align-items:center}
+main{padding:2.4rem 0 4rem}.intro{text-align:center;max-width:760px;margin:0 auto 2rem}.intro p{color:var(--muted)}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0 2.7rem}
+.qcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1rem;text-align:center;box-shadow:0 8px 24px #123b6610}
+.qcard .ico{font-size:2rem}.qcard strong{display:block;color:var(--navy)}
+.section{background:#fff;border:1px solid var(--line);border-radius:22px;margin:1rem 0;overflow:hidden;box-shadow:0 8px 25px #123b660b}
+.acc{width:100%;border:0;background:#fff;text-align:left;padding:1.25rem 1.35rem;display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:center;cursor:pointer;color:var(--ink);font:inherit}
+.acc:hover,.acc:focus-visible{background:#f0f8fb;outline:3px solid transparent}.num{width:44px;height:44px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:900}
+.acc-title strong{display:block;font-size:1.2rem;color:var(--navy)}.acc-title small{color:var(--muted)}.chev{font-size:1.4rem;transition:.2s}
+.acc[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.panel{display:none;padding:0 1.35rem 1.5rem 5.8rem}.panel.open{display:block}
+.visual{background:var(--mint);border-radius:18px;padding:1.1rem;margin:1rem 0}.visual h3{margin:.1rem 0 .7rem;color:var(--navy)}
+.flow{display:flex;gap:.5rem;align-items:stretch;flex-wrap:wrap}.flow .step{flex:1 1 135px;background:#fff;border:1px solid #bfe2df;border-radius:14px;padding:.75rem;text-align:center;font-weight:800}.arrow{display:grid;place-items:center;color:var(--teal);font-weight:900}
+.channels{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.channel{border:1px solid var(--line);border-radius:16px;padding:1rem;background:#fff}.tag{display:inline-block;border-radius:999px;padding:.25rem .55rem;background:#e9f3ff;color:#075d9a;font-size:.78rem;font-weight:900}.channel h3{margin:.6rem 0 .25rem;color:var(--navy)}
+.notice{border-left:6px solid #d4a21a;background:var(--warn);padding:1rem;border-radius:10px;margin:1rem 0}.tip{border-left-color:var(--teal);background:var(--mint)}
+.mock{max-width:430px;background:#fff;border:3px solid #23384a;border-radius:26px;padding:1rem;margin:1rem auto;box-shadow:0 12px 30px #0001}.mock .bar{width:35%;height:7px;background:#23384a;border-radius:10px;margin:0 auto 1rem}.field{border:2px solid #9fb3c2;border-radius:10px;padding:.75rem;margin:.6rem 0}.fakebtn{background:#1351b4;color:#fff;border-radius:10px;padding:.7rem;text-align:center;font-weight:850;margin-top:.7rem}.pointer{color:var(--danger);font-weight:900}
+.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:.65rem}.check{background:#fff;border:1px solid var(--line);border-radius:12px;padding:.75rem;display:flex;gap:.6rem}.check input{width:22px;height:22px}
+.formula{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem}.formula div{background:#fff;border:2px solid #c5e9e5;border-radius:14px;padding:.75rem}.formula b{color:var(--teal)}
+.template{background:#fff;border:2px dashed #9fb3c2;border-radius:14px;padding:1rem}.copyrow{display:flex;justify-content:flex-end;margin-top:.7rem}
+.timeline{border-left:4px solid #bfe2df;margin-left:1rem;padding-left:1.2rem}.time{position:relative;margin:0 0 1.2rem}.time:before{content:"";position:absolute;width:16px;height:16px;border-radius:50%;background:var(--teal);left:-1.72rem;top:.35rem}
+.gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem}.gloss div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:.8rem}
+.project{background:var(--navy);color:#fff;border-radius:22px;padding:1.5rem;margin-top:2rem}.project h2{color:#fff}.names{columns:2}
+footer{background:#0d2d4b;color:#dfeaf2;padding:2rem 0}.sources a{color:#fff}
+.contrast{--bg:#000;--white:#000;--ink:#fff;--muted:#eee;--navy:#fff;--line:#fff;--mint:#111;--warn:#222;--teal:#00ffff;--blue:#7cc8ff}
+.contrast .hero,.contrast .top,.contrast footer,.contrast .project{background:#000;border:2px solid #fff}.contrast .hero{color:#fff}.contrast .btn.light{background:#fff;color:#000}.contrast .num{color:#000}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.quick{grid-template-columns:repeat(2,1fr)}.channels,.formula{grid-template-columns:1fr}.panel{padding-left:1.1rem}.checks,.gloss{grid-template-columns:1fr}.names{columns:1}.phone{margin-top:1rem}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+@media print{.top,.hero-actions,.chev,.a11y{display:none}.panel{display:block!important}.section{break-inside:avoid;box-shadow:none}.hero{padding:1.5rem 0}.phone{box-shadow:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="top">
+ <div class="wrap"><strong>UNIVERSIDADE ESTÁCIO DE SÁ · CURSO DE DIREITO</strong>
+ <div class="a11y" aria-label="Ferramentas de acessibilidade">
+  <button type="button" id="minus" aria-label="Diminuir texto">A−</button>
+  <button type="button" id="plus" aria-label="Aumentar texto">A+</button>
+  <button type="button" id="contrast" aria-pressed="false">Alto contraste</button>
+ </div></div>
+</div>
+<header class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="kicker">Cartilha Digital Interativa · Projeto de Extensão</div>
+   <h1>Teve um problema com uma empresa?</h1>
+   <p>Este guia mostra, com linguagem simples e passo a passo visual, como organizar seus documentos, escolher um canal e registrar sua reclamação.</p>
+   <div class="hero-actions">
+    <a class="btn light" href="#guia">Começar o passo a passo</a>
+    <a class="btn outline" href="#projeto">Sobre o projeto</a>
+   </div>
+  </div>
+  <div class="phone" aria-label="Ilustração de celular com etapas da cartilha">
+   <div class="notch"></div>
+   <strong style="color:var(--navy)">Seu caminho</strong>
+   <div class="mini">📞 <span>Fale com a empresa</span></div>
+   <div class="mini">📝 <span>Guarde o protocolo</span></div>
+   <div class="mini">📂 <span>Separe as provas</span></div>
+   <div class="mini">📱 <span>Escolha onde reclamar</span></div>
+   <div class="mini">✅ <span>Acompanhe a solução</span></div>
+  </div>
+ </div>
+</header>
+
+<main id="conteudo" class="wrap">
+ <div class="intro">
+  <h2>Você não precisa entender de Direito para usar esta cartilha.</h2>
+  <p>Clique em cada etapa. Ela abre somente quando você quiser, para não encher a tela de informação.</p>
+ </div>
+ <div class="quick" aria-label="Exemplos de problemas">
+  <div class="qcard"><div class="ico">📦</div><strong>Compra não chegou</strong></div>
+  <div class="qcard"><div class="ico">💳</div><strong>Cobrança indevida</strong></div>
+  <div class="qcard"><div class="ico">❌</div><strong>Cancelamento não feito</strong></div>
+  <div class="qcard"><div class="ico">🔧</div><strong>Produto com problema</strong></div>
+ </div>
+
+ <div id="guia">
+  <section class="section">
+   <button class="acc" aria-expanded="true" aria-controls="p1"><span class="num">1</span><span class="acc-title"><strong>Por onde eu começo?</strong><small>Veja a ordem mais simples para organizar o problema.</small></span><span class="chev">⌄</span></button>
+   <div class="panel open" id="p1">
+    <div class="visual"><h3>Seu caminho em 6 passos</h3>
+     <div class="flow"><div class="step">1. Fale com a empresa</div><div class="arrow">→</div><div class="step">2. Guarde o protocolo</div><div class="arrow">→</div><div class="step">3. Separe as provas</div><div class="arrow">→</div><div class="step">4. Escolha o canal</div><div class="arrow">→</div><div class="step">5. Reclame</div><div class="arrow">→</div><div class="step">6. Acompanhe</div></div>
+    </div>
+    <div class="notice tip"><strong>Dica:</strong> crie uma pasta no celular chamada <b>“Minha reclamação”</b> e salve nela protocolos, prints, comprovantes e e-mails.</div>
+   </div>
+  </section>
+
+  <section class="section">
+   <button class="acc" aria-expanded="false" aria-controls="p2"><span class="num">2</span><span class="acc-title"><strong>Onde eu reclamo?</strong><small>Consumidor.gov.br, CEJUSC/mediação ou Reclame Aqui?</small></span><span class="chev">⌄</span></button>
+   <div class="panel" id="p2">
+    <div class="channels">
+     <article class="channel"><span class="tag">SERVIÇO PÚBLICO</span><h3>Consumidor.gov.br</h3><p>Permite falar diretamente com empresas participantes.</p><p><b>Use quando:</b> a empresa estiver cadastrada na plataforma.</p><a class="btn" href="https://www.consumidor.gov.br/" target="_blank" rel="noopener">Abrir canal oficial</a></article>
+     <article class="channel"><span class="tag">JUDICIÁRIO</span><h3>CEJUSC / Mediação</h3><p>Os CEJUSCs trabalham com conciliação e mediação, inclusive em situações pré-processuais.</p><p><b>Use quando:</b> for adequado buscar uma solução consensual pelo Judiciário.</p><a class="btn" href="https://www.cnj.jus.br/conciliacao-e-mediacao/" target="_blank" rel="noopener">Entender no CNJ</a></article>
+     <article class="channel"><span class="tag">PLATAFORMA PRIVADA</span><h3>Reclame Aqui</h3><p>Canal privado de reclamações e reputação empresarial.</p><p><b>Use quando:</b> quiser registrar a reclamação e buscar uma resposta da empresa.</p><a class="btn" href="https://www.reclameaqui.com.br/" target="_blank" rel="noopener">Abrir plataforma</a></article>
+    </div>
+    <div class="notice"><strong>Não confunda:</strong> Consumidor.gov.br é serviço público; Reclame Aqui é uma plataforma privada; CEJUSC é uma unidade do Judiciário voltada à solução consensual de conflitos.</div>
+   </div>
+  </section>
+
+  <section class="section">
+   <button class="acc" aria-expanded="false" aria-controls="p3"><span class="num">3</span><span class="acc-title"><strong>Como entrar no Gov.br?</strong><small>Um exemplo visual para quem tem pouca familiaridade com tecnologia.</small></span><span class="chev">⌄</span></button>
+   <div class="panel" id="p3">
+    <div class="mock" aria-label="Exemplo ilustrativo de tela de login Gov.br">
+     <div class="bar"></div><h3 style="text-align:center;color:#1351b4">gov.br</h3>
+     <p><b>Identifique-se no gov.br</b></p>
+     <div class="field">Digite seu CPF <span class="pointer">← aqui</span></div>
+     <div class="fakebtn">Continuar</div>
+    </div>
+    <div class="visual"><h3>Passo a passo</h3>
+     <div class="flow"><div class="step">1. Abra o Gov.br</div><div class="arrow">→</div><div class="step">2. Digite seu CPF</div><div class="arrow">→</div><div class="step">3. Entre ou crie a conta</div><div class="arrow">→</div><div class="step">4. Confira o nível</div></div>
+    </div>
+    <div class="notice"><strong>Segurança:</strong> não compartilhe sua senha ou código de acesso. Use os canais oficiais do Gov.br.</div>
+    <a class="btn" href="https://www.gov.br/governodigital/pt-br/identidade/conta-gov-br" target="_blank" rel="noopener">Ajuda oficial do Gov.br</a>
+   </div>
+  </section>
+
+  <section class="section">
+   <button class="acc" aria-expanded="false" aria-controls="p4"><span class="num">4</span><span class="acc-title"><strong>O que são Prata e Ouro?</strong><small>Veja como aumentar o nível da conta, se o serviço exigir.</small></span><span class="chev">⌄</span></button>
+   <div class="panel" id="p4">
+    <div class="channels">
+     <article class="channel"><span class="tag">PRATA</span><h3>Formas de validação</h3><p>• reconhecimento facial com base da CNH;<br>• internet banking de banco credenciado;<br>• SIGEPE, para servidor público federal.</p></article>
+     <article class="channel"><span class="tag">OURO</span><h3>Formas de validação</h3><p>• reconhecimento facial com base da Justiça Eleitoral;<br>• QR Code da Carteira de Identidade Nacional (CIN);<br>• certificado digital ICP-Brasil.</p></article>
+     <article class="channel"><span class="tag">LEMBRETE</span><h3>Nem sempre é necessário</h3><p>O nível exigido depende do serviço. Confira antes de tentar aumentar sua conta.</p></article>
+    </div>
+    <a class="btn" href="https://www.gov.br/governodigital/pt-br/identidade/conta-gov-br/niveis-da-conta-govbr" target="_blank" rel="noopener">Ver níveis no Gov.br</a>
+   </div>
+  </section>
+
+  <section class="section">
+   <button class="acc" aria-expanded="false" aria-controls="p5"><span class="num">5</span><span class="acc-title"><strong>O que eu preciso separar?</strong><small>Marque o que você já tem.</small></span><span class="chev">⌄</span></button>
+   <div class="panel" id="p5">
+    <div class="checks">
+     <label class="check"><input type="checkbox"> Protocolo de atendimento</label>
+     <label class="check"><input type="checkbox"> Nota fiscal ou recibo</label>
+     <label class="check"><input type="checkbox"> Comprovante de pagamento</label>
+     <label class="check"><input type="checkbox"> Número do pedido/contrato</label>
+     <label class="check"><input type="checkbox"> Prints de conversas e e-mails</label>
+     <label class="check"><input type="checkbox"> Print da oferta ou anúncio</label>
+    </div>
+    <div class="notice tip"><strong>Print bom:</strong> deixe visíveis a data, o valor, o número do pedido e a parte importante da conversa.</div>
+    <div class="notice"><strong>Proteja seus dados:</strong> oculte informações sensíveis que não sejam necessárias para explicar o problema.</div>
+   </div>
+  </section>
+
+  <section class="section">
+   <button class="acc" aria-expanded="false" aria-controls="p6"><span class="num">6</span><span class="acc-title"><strong>Como eu escrevo a reclamação?</strong><small>Sem “juridiquês”: conte o fato e diga o que você quer.</small></span><span class="chev">⌄</span></button>
+   <div class="panel" id="p6">
+    <div class="formula"><div><b>O QUÊ?</b><br>O que comprou ou contratou?</div><div><b>QUANDO?</b><br>Quando aconteceu?</div><div><b>PROTOCOLO</b><br>O que já tentou fazer?</div><div><b>PEDIDO</b><br>Qual solução deseja?</div></div>
+    <h3>Modelo para copiar e adaptar</h3>
+    <div class="template" id="modelo">No dia ___/___/___, comprei/contratei __________________, pelo valor de R$ ______. O problema foi ______________________________. Entrei em contato com a empresa em ___/___/___, protocolo nº __________, mas ______________________________. Por isso, solicito ______________________________.</div>
+    <div class="copyrow"><button class="btn" id="copy">📋 Copiar modelo</button></div>
+    <div class="notice tip"><strong>Prefira:</strong> “Comprei o produto no dia 10/08 e ele não chegou.”<br><strong>Evite:</strong> frases difíceis como “venho por meio desta requerer...”.</div>
+   </div>
+  </section>
+
+  <section class="section">
+   <button class="acc" aria-expanded="false" aria-controls="p7"><span class="num">7</span><span class="acc-title"><strong>Enviei. E agora?</strong><small>Prazo, resposta e avaliação no Consumidor.gov.br.</small></span><span class="chev">⌄</span></button>
+   <div class="panel" id="p7">
+    <div class="timeline">
+     <div class="time"><b>Reclamação enviada</b><br>Guarde o número do registro.</div>
+     <div class="time"><b>Empresa responde</b><br>No Consumidor.gov.br, a empresa tem até <b>10 dias</b> para analisar e responder.</div>
+     <div class="time"><b>Leia a proposta</b><br>Veja se ela realmente resolve o seu problema.</div>
+     <div class="time"><b>Confira o cumprimento</b><br>O estorno caiu? O produto chegou? O serviço foi cancelado?</div>
+     <div class="time"><b>Avalie</b><br>Depois da resposta, você tem até <b>20 dias</b> para comentar e avaliar no Consumidor.gov.br.</div>
+    </div>
+    <div class="notice"><strong>Importante:</strong> promessa não é problema resolvido. Só marque “Resolvida” depois de conferir se o combinado realmente aconteceu.</div>
+   </div>
+  </section>
+
+  <section class="section">
+   <button class="acc" aria-expanded="false" aria-controls="p8"><span class="num">8</span><span class="acc-title"><strong>E se houver acordo?</strong><small>Entenda “homologação” em linguagem simples.</small></span><span class="chev">⌄</span></button>
+   <div class="panel" id="p8">
+    <div class="visual"><h3>🤝 Acordo homologado</h3><p><b>Homologar</b> significa o juiz confirmar juridicamente o acordo. Quando homologado judicialmente, o acordo pode constituir <b>título executivo judicial</b>.</p><p><b>Traduzindo:</b> se uma obrigação do acordo judicial não for cumprida, existem meios processuais para exigir o cumprimento.</p></div>
+    <div class="notice tip"><strong>Guarde:</strong> salve o termo do acordo, os comprovantes e as mensagens importantes.</div>
+   </div>
+  </section>
+
+  <section class="section">
+   <button class="acc" aria-expanded="false" aria-controls="p9"><span class="num">9</span><span class="acc-title"><strong>Palavras que podem confundir</strong><small>Glossário rápido.</small></span><span class="chev">⌄</span></button>
+   <div class="panel" id="p9">
+    <div class="gloss"><div><b>Protocolo</b><br>Número que identifica seu atendimento.</div><div><b>CEJUSC</b><br>Centro do Judiciário voltado à solução consensual de conflitos e cidadania.</div><div><b>Mediação</b><br>Uma pessoa imparcial facilita o diálogo para que as partes construam uma solução.</div><div><b>Conciliação</b><br>Método consensual em que um conciliador ajuda as partes a buscar um acordo.</div><div><b>Homologação</b><br>Confirmação judicial de um acordo.</div><div><b>ODR</b><br>Resolução de conflitos realizada com apoio de meios digitais.</div></div>
+   </div>
+  </section>
+ </div>
+
+ <section class="project" id="projeto">
+  <h2>Sobre o projeto</h2>
+  <p><b>Universidade Estácio de Sá · Curso de Direito</b><br>
+  <b>Disciplina:</b> Métodos Adequados de Soluções de Conflitos<br>
+  <b>Professor:</b> Marcilio Cunha</p>
+  <p><b>Tema:</b> O papel das ODRs e o acesso à Justiça Digital para as populações vulneráveis: diagnóstico de barreiras de usabilidade e proposta de ação educomunicativa no uso das plataformas digitais.</p>
+  <p><b>Integrantes:</b></p>
+  <div class="names">Fábio Souza Gomes Pinto<br>Hadassa França Sobrinho<br>Isis Ferreira Machado<br>Maria Fernanda Goes<br>Maria Eduarda Machado<br>Maria Eduarda Martin<br>Matheus Moreira da Silva<br>Rebeca Gama</div>
+ </section>
+</main>
+
+<footer>
+ <div class="wrap sources">
+  <strong>Fontes e atualização</strong>
+  <p>Conteúdo operacional conferido em fontes oficiais. Consulte sempre os canais oficiais, pois procedimentos digitais podem mudar.</p>
+  <p><a href="https://www.consumidor.gov.br/" target="_blank" rel="noopener">Consumidor.gov.br</a> ·
+  <a href="https://www.gov.br/governodigital/pt-br/identidade/conta-gov-br" target="_blank" rel="noopener">Conta Gov.br</a> ·
+  <a href="https://www.cnj.jus.br/conciliacao-e-mediacao/" target="_blank" rel="noopener">CNJ — Conciliação e Mediação</a></p>
+  <small>Niterói/RJ · 2026 · Material educativo de projeto de extensão.</small>
+ </div>
+</footer>
+<script>
+document.querySelectorAll('.acc').forEach(btn=>{
+ btn.addEventListener('click',()=>{
+  const open=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',String(!open));
+  document.getElementById(btn.getAttribute('aria-controls')).classList.toggle('open',!open);
+ });
+});
+let fs=18;
+document.getElementById('plus').onclick=()=>{fs=Math.min(24,fs+1);document.documentElement.style.setProperty('--fs',fs+'px')};
+document.getElementById('minus').onclick=()=>{fs=Math.max(15,fs-1);document.documentElement.style.setProperty('--fs',fs+'px')};
+document.getElementById('contrast').onclick=e=>{document.body.classList.toggle('contrast');e.currentTarget.setAttribute('aria-pressed',document.body.classList.contains('contrast'))};
+document.getElementById('copy').onclick=async(e)=>{
+ const t=document.getElementById('modelo').innerText;
+ try{await navigator.clipboard.writeText(t);e.currentTarget.textContent='✓ Modelo copiado';setTimeout(()=>e.currentTarget.textContent='📋 Copiar modelo',1800)}
+ catch{e.currentTarget.textContent='Selecione o texto acima para copiar'}
+};
+</script>
+</body>
+</html>
